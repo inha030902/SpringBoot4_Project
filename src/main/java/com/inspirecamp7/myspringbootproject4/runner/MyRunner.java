@@ -14,8 +14,8 @@ public class MyRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("환경변수 myboot.name = " + myBootName);
-        System.out.println("server.port 환경변수 확인 " + args.containsOption("server.port"));
-        System.out.println("myboot.name 환경변수 확인 " + args.containsOption("myboot.name"));
+        System.out.println("server.port VM argument 환경변수 확인 " + args.containsOption("server.port"));
+        System.out.println("myboot.name Program 환경변수 확인 " + args.containsOption("myboot.name"));
         }
 
 }
