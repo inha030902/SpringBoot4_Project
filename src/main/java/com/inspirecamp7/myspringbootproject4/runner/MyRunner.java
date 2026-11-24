@@ -1,4 +1,9 @@
 package com.inspirecamp7.myspringbootproject4.runner;
 
-public class MyRunner {
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyRunner implements ApplicationRunner {
+
 }
