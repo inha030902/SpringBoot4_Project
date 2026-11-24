@@ -16,5 +16,5 @@ public class MySpringBootProject4Application {
         application.setWebApplicationType(WebApplicationType.SERVLET);
         application.run(args);
     }
-    
+
 }
