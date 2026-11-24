@@ -16,9 +16,5 @@ public class MySpringBootProject4Application {
         application.setWebApplicationType(WebApplicationType.SERVLET);
         application.run(args);
     }
-
-    @Bean
-    public String helloBean() {
-        return new String("Hello 스프링부트");
-    }
+    
 }
