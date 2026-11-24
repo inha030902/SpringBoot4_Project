@@ -18,17 +18,16 @@ public class MyRunner implements ApplicationRunner {
         System.out.println("환경변수 myboot.name = " + myBootName);
         System.out.println("server.port VM argument 환경변수 확인 " + args.containsOption("server.port"));
         System.out.println("myboot.name Program 환경변수 확인 " + args.containsOption("myboot.name"));
-        }
-        
+
         // 환경변수 목록을 확인하기
         Set<String> optionNames = args.getOptionNames();
         //기존의 for loop
         for(String name: optionNames) {
-        System.out.println("name = " + name);
+            System.out.println("name = " + name);
         }
 
         //Iterable 의 default void foreEach(Consumer <? super T> action)
         //함수형 인터페이스의 추상 메서드 void accept(T t)
         optionNames.forEach( name -> System.out.println(name));
-
+    }
 }
