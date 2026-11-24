@@ -1,4 +1,4 @@
-package com.inspirecamp7.myspringbootprojcect4;
+package com.inspirecamp7.myspringbootproject4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

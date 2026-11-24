@@ -1,4 +1,4 @@
-package com.inspirecamp7.myspringbootprojcect4.runner;
+package com.inspirecamp7.myspringbootproject4.runner;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -15,6 +15,5 @@ public class DBRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("DataSource 구현 클래스 이름 = " + dataSource.getClass().getName());
-
     }
 }
