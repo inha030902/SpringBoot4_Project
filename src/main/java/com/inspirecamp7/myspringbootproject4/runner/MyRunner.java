@@ -30,6 +30,12 @@ public class MyRunner implements ApplicationRunner {
         //Iterable 의 default void foreEach(Consumer <? super T> action)
         //Consumer = 함수형 인터페이스
         // 함수형 인터페이스의 추상 메서드 void accept(T t)
+        // Consumer 인터페이스의 accept() 메서드를 람다식으로 표현
         optionNames.forEach(optionName -> System.out.println(optionName));
-    }
+
+        //Consumer 인터페이스의 accept() 메서드를 Method Reference 로 표현하기
+        optionNames.forEach(System.out::println);
+
+        }
 }
+
