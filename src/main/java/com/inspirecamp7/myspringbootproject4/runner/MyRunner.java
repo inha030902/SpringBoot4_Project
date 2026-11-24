@@ -8,10 +8,11 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(2)
 public class MyRunner implements ApplicationRunner {
-
+    @Value("${myboot.name}")
+    String myBootName;
     @Override
     public void run(ApplicationArguments args) throws Exception {
-
+        System.out.println("환경변수 myboot.name = " + myBootName);
 
     }
 }
