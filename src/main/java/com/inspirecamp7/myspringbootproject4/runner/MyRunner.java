@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(2)
 public class MyRunner implements ApplicationRunner {
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
 
