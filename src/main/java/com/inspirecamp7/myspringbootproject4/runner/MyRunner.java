@@ -41,7 +41,7 @@ public class MyRunner implements ApplicationRunner {
         //2단계 - 람다표현식
         optionNames.forEach(optionName -> System.out.println(optionName));
 
-        //3단계 - Method 참조 방식 
+        //3단계 - Method Reference
         //Consumer 인터페이스의 accept() 메서드를 Method Reference 로 표현하기
         optionNames.forEach(System.out::println);
 
