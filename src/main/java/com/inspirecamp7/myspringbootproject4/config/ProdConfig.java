@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Profile;
 public class ProdConfig {
     @Bean
     public CustomVO customVO() {
-        return CustomVO.builder() //CustomoerVOBuilder
-                .mode("운영 mode")
-                .rate("1.9")
+        return CustomVO.builder() //CustomerVOBuilder
+                .mode("운영 Mode")
+                .rate(1.9)
                 .build();
     }
 }

@@ -33,7 +33,7 @@ public class MyRunner implements ApplicationRunner {
     @Autowired
     CustomVO customVO;
 
-    //Loger 객체생성
+    //Logger 객체생성
     Logger logger = LoggerFactory.getLogger(MyRunner.class);
 
     @Override
