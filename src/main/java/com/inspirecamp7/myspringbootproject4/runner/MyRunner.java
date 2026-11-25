@@ -14,6 +14,10 @@ import java.util.function.Consumer;
 public class MyRunner implements ApplicationRunner {
     @Value("${myboot.name}")
     String myBootName;
+
+    @Value("${myboot.age")
+    int mybootAge;
+    
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("환경변수 myboot.name = " + myBootName);
