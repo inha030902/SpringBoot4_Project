@@ -19,6 +19,6 @@ public class DBRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         //HikariDataSource implements DataSource
-        System.out.println("DataSource 구현 클래스 이름 = " + dataSource.getClass().getName());
+        log.info("DataSource 구현 클래스 이름 = {}", dataSource.getClass().getName());
     }
 }
