@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 
 @Component
-@Order (1)
+@Order(1)
 public class DBRunner implements ApplicationRunner {
     @Autowired
     DataSource dataSource;
